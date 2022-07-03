@@ -4,9 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    
+    <div class="container">
+            <div class="imgContainer">
+                <img src="mypup.JPG" alt="">
+            </div>
+            <form action="">
+                <p>Find out about the best German Shepherds ever by registering below!</p>
+                <fieldset>
+                    <legend>Let's do this!</legend>
+                    <label for="fname">First Name</label>
+                    <div id="fname">
+                        <input type="text" required="required" class="fname" name="firstName" placeholder="Matthew">
+                        <span class="fnameErr">Please put in your first name</span>
+                    </div>
+                    <label for="lname">Last Name</label>
+                    <div id="lname">
+                        <input type="text" required="required" class="lname" name="lastName" placeholder="Reynolds">
+                        <span class="lnameErr">Please put in your last name</span>
+                    </div>
+                    <label for="email">Email</label>
+                    <div id="email">
+                        <input type="email" required="required" class="email" name="email" placeholder="Matthew.Reynolds@example.com">
+                        <span class="emailErr">Please put in your email in the right format (e.g. george@google.co.uk)</span>
+                    </div>
+                    <label for="telNumber">Phone Number</label>
+                    <div id="telNumber">
+                        <input type="tel" required="required" pattern="(((\+44)? ?(\(0\))? ?)|(0))( ?[0-9]{3,4}){3}"class="telNumber" name="telNumber" placeholder="1234 567890">
+                        <span class="telNumberErr">Please put in your phone number in the right format (e.g. +44 07123 456789, +44 being optional)</span>
+                    </div>
+                    <label for="password">Password</label>
+                    <div id="password">
+                        <input type="password" required="required" class="password" name="password">
+                        <span class="passwordErr">Please put in a legit password (at least 1 special character)</span>
+                    </div>
+                    <label for="confirmPassword">Confirm Password</label>
+                    <div id="confirmPassword">
+                        <input type="password" required="required" class="confirmPassword" name="confirmPassword">
+                        <span class="confirmPasswordErr">Passwords don't match</span>
+                    </div>
+                    <input type="submit">
+                </fieldset>
+                <p>Or login, if you'd like <a href="/">by clicking here</a>.</p>
+            </form>
+    </div>
+<script src="index.js"></script>
 </body>
 </html>
